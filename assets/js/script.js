@@ -76,22 +76,7 @@ window.addEventListener("load", () => {
 /*====================
   03. tap to top js
 =======================*/
-const btn = document.querySelector(".scroll");
-
-btn.addEventListener("click", function() {
-    scroll(0, 200);
-});
-
-window.onscroll = function showHide() {
-    if (
-        document.body.scrollTop > 500 ||
-        document.documentElement.scrollTop > 500
-    ) {
-        btn.style.transform = "scale(1)";
-    } else {
-        btn.style.transform = "scale(0)";
-    }
-};
+//Get the button
 
 function scroll(target, duration) {
     if (duration <= 0) {
